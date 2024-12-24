@@ -9,7 +9,7 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 # MongoDB Atlas connection
-client = MongoClient("mongodb+srv://cic:cic2002@cluster0.quczg.mongodb.net/")
+client = MongoClient("mongodb+srv://cic:cic2002@cluster0.quczg.mongodb.net/college_chatbot?retryWrites=true&w=majority")
 db = client["college_chatbot"]
 ug_programmes_collection = db["ug_programmes"]
 pg_programmes_collection = db["pg_programmes"]
