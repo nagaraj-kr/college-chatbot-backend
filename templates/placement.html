@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLN College Placement Page</title>
+    <script>// Example JavaScript for form validation
+        document.querySelector('form').addEventListener('submit', function(event) {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+        
+            if (!name || !email || !message) {
+                alert('Please fill out all fields.');
+                event.preventDefault();
+            }
+        });
+        </script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+th {
+    background: #f4f4f4;
+}
+
+.recruiters-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recruiter {
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.recruiter img {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea, form button {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    background: #333;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Placement Cell</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a href="#recruiters">Recruiters</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to the College Placement Cell. We are dedicated to connecting students with potential employers.</p>
+    </section>
+
+    <section id="statistics">
+        <h2>Placement Statistics</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Percentage Placed</th>
+                <th>Highest Package</th>
+                <th>Average Package</th>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>95%</td>
+                <td>$120,000</td>
+                <td>$65,000</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </section>
+
+    <section id="recruiters">
+        <h2>Our Recruiters</h2>
+        <div class="recruiters-list">
+            <div class="recruiter">
+                <img src="acenture.png" alt="Company 1">
+                <p>Company 1</p>
+            </div>
+            <div class="recruiter">
+                <img src="tcs.png" alt="Company 2">
+                <p>Company 2</p>
+            </div>
+            <!-- Add more recruiters as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 College Placement Cell. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
